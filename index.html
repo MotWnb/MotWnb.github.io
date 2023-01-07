@@ -96,30 +96,8 @@
         <a href="更新日志.html" style="color: brown;">更新日志</a>
     </div>
     <button onclick="window.location.href='https://github.com/MotWnb/CHATBOT_CHINESE'" style="width: 100px; height: 60px">中文版聊天机器人python3.7</button>
+    <footer style="bottom:0px; text-align: center;">
+        <a href="Mailto:dsxbmotw@mysdserver.tk?&Subject=Hello&Body=你好" style="color:cadetblue">联系我（提示：必须在此设备上有邮件发送软件）<br>部分浏览器可能无法使用，建议使用EDGE浏览器</a><img src="联系我们.png"  width="40" height="40"></a>
+    </footer>
 </body>
-<footer style="bottom:0px; text-align: center;">
-    <a href="Mailto:dsxbmotw@mysdserver.tk?&Subject=Hello&Body=你好" style="color:cadetblue">联系我（提示：必须在此设备上有邮件发送软件）<br>部分浏览器可能无法使用，建议使用EDGE浏览器</a><img src="联系我们.png"  width="40" height="40"></a>
-    </br><?php
-    if (isset($_REQUEST['email'])) { // 如果接收到邮箱参数则发送邮件
-        // 发送邮件
-        $email = $_REQUEST['email'] ;
-        $subject = $_REQUEST['subject'] ;
-        $message = $_REQUEST['message'] ;
-        mail("someone@example.com", $subject,
-        $message, "From:" . $email);
-        echo "邮件发送成功";
-    } else { // 如果没有邮箱参数则显示表单
-        echo "<form method='post' action='mailform.php'>
-        Email: <input name='email' type='text'><br>
-        Subject: <input name='subject' type='text'><br>
-        Message:<br>
-        <textarea name='message' rows='15' cols='40'>
-        </textarea><br>
-        <input type='submit'>
-        </form>
-    }
-    ?>
-    </br><a href="比赛作品.sb3" style="color:#d0e4fe">临时文件1</a>
-    </br><a href="作品介绍.docx" style="color:#d0e4fe">临时文件2</a>
-</footer>
 </html>
